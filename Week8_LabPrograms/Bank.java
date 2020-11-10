@@ -46,11 +46,10 @@ class SavAct extends Account{
 }
 class Bank{
   public static void main(String[] args) {
-
+    Scanner sc = new Scanner(System.in);
     System.out.println("Enter your choice\n1. Savings Account \n2.Current Account");
-    int choice=in.nextInt();
+    int choice=sc.nextInt();
 
-    Scanner in=new Scanner(System.in);
     CurrAct c= new CurrAct();
     SavAct s= new SavAct();
 
@@ -58,7 +57,7 @@ class Bank{
       c.Accept();
 
       System.out.println("Enter your choice\n1. Deposit\n2. Withdraw");
-      int n=in.nextInt();
+      int n=  sc.nextInt();
 
       switch (n) {
         case 1:{
@@ -77,7 +76,7 @@ class Bank{
       s.Accept();
 
       System.out.println("Enter your choice\n1. Deposit\n2. Withdraw");
-      int n=in.nextInt();
+      int n=sc.nextInt();
 
       switch (n) {
         case 1:{
