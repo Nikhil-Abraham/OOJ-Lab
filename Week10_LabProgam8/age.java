@@ -44,17 +44,17 @@ class son extends father{
   }
 }
 
-class fatherson{
+class Main{
   public static void main(String args[]){
-    son s=new son();
+    son s1=new son();
     try{
-      s.ex1();
+      s1.ex1();
     }
     catch(fatherAgeException e){
       System.out.println(e);
     }
     try{
-      s.ex2();
+      s1.ex2();
     }
     catch(sonAgeException e){
       System.out.println(e);
